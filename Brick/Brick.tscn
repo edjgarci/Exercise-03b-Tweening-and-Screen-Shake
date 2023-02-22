@@ -30,16 +30,19 @@ spread = 180.0
 gravity = Vector2( 0, 0 )
 initial_velocity = 300.0
 initial_velocity_random = 1.0
+scale_amount = 0.6
 scale_amount_curve = SubResource( 2 )
 color_ramp = SubResource( 3 )
 hue_variation = 1.0
 hue_variation_random = 1.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -45.0
+margin_left = -43.0
 margin_top = -15.0
-margin_right = 45.0
+margin_right = 47.0
 margin_bottom = 15.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]

@@ -22,17 +22,6 @@ script = ExtResource( 1 )
 position = Vector2( 50, 10 )
 shape = SubResource( 1 )
 
-[node name="Images" type="Node2D" parent="."]
-
-[node name="Sprite" type="Sprite" parent="Images"]
-position = Vector2( 50, 10 )
-texture = ExtResource( 2 )
-
-[node name="Highlight" type="Sprite" parent="Images"]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 50, 10 )
-texture = ExtResource( 3 )
-
 [node name="Confetti" type="CPUParticles2D" parent="."]
 position = Vector2( 50, -10 )
 emitting = false
@@ -53,3 +42,16 @@ scale_amount_curve = SubResource( 2 )
 color_ramp = SubResource( 3 )
 hue_variation = 1.0
 hue_variation_random = 1.0
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Images" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Images"]
+position = Vector2( 50, 10 )
+texture = ExtResource( 2 )
+
+[node name="Highlight" type="Sprite" parent="Images"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 50, 10 )
+texture = ExtResource( 3 )
